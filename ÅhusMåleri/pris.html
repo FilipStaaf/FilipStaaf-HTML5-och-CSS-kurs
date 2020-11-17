@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pris Info</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!--Navbar-->
+            <div class="nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Startsida</a> 
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">Om Oss</a>
+                    </div>  
+                </div>
+                <div class="right-side">
+                    <div class="brand">
+                        <div>Åhus Måleri</div>
+                    </div>                  
+                </div>
+            </div>
+            
+            <!--Formulär-->
+            <div class="formular-header-wrapper">
+                <h2> Formulär till anbud </h2>
+            </div>
+
+            <div class="formular-wrapper">
+
+                <form id="form" name="form" method="post" action="test.php">
+                    Förnamn:
+                    <input type="text" name="fnamn" id="fnamn" /> <br>
+                    <br>Efternamn:
+                    <input type="text" name="enamn" id="enamn" /> <br>
+                    <br>E-postadress:
+                    <input type="email" name="epost" id="epost" /> <br>
+                    <br>Projekt Adress:
+                    <input type="text" name="padress" id="padress" /> <br>
+                    <br>Telefon:
+                    <input type="text" name="telefon" id="telefon" /> <br>
+
+
+                    <br>Välj typ av arbete:<br>
+                    <input type="radio" id="imalning" name="malning" value="imalning">
+                    <label for="imalning">Invändig Målning</label><br>
+                    <input type="radio" id="umalning" name="malning" value="umalning">
+                    <label for="imalning">Utvändig Målning</label><br>
+                    <input type="radio" id="fmalning" name="malning" value="fmalning">
+                    <label for="imalning">Fönster Målning</label><br>
+                    <input type="radio" id="bmalning" name="malning" value="bmalning">
+                    <label for="imalning">Brandskydds Målning</label><br>
+
+                    <br> Meddelande (Beskriv projektet & dess måttenheter):<br>
+                    <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br>
+                    <input type="submit" name="skicka" id="skicka" value="Skicka Meddelande"/>
+                </form>
+            </div>
+        </div>
+        <!--Footer-->
+   
+        <div class="footer">
+            <div class="footer-content">
+                <div class="content-left">
+                    <pre>
+                        <a href="https://sv-se.facebook.com/"><img src="images/FB.png" alt=""></a>  ÅhusMåleri
+                        <a href="https://twitter.com/?lang=sv"><img src="images/twit.png" alt=""></a>  ÅhusMålaren
+                        <a href="https://www.google.com/intl/sv/gmail/about/"><img src="images/mail.png" alt=""></a>  Ahus.Maleri@gmail.com
+                    </pre>
+                </div>
+                <div class="content-right">
+                    <ul style="list-style-type:none;">
+                        <li>Kontakt</li>
+                        <li>Adress: Hittepågatan 16 Åhus </li> 
+                        <li>Telefon: 07060065</li>
+                    <li>Öppetider: Mån - Fre | 07:00 - 17:00</li>
+                    </ul>   
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <a href="//github.com/FilipStaaf/HTML5-och-CSS-kurs">//github.com/FilipStaaf/HTML5-och-CSS-kurs</a> | Designed by Filip Staaf
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Åhus Måleri</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!--Navbar-->
+            <div class="nav-wrapper">
+
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="index.html">Startsida</a> 
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">Om Oss</a>
+                    </div>  
+                </div>
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li>Nyheter!</li>
+                        <li>Ny anställd Yazeen</li>
+                        <li>    Vi har en ny fönstermålnings lokal</li>
+                    </ul>
+                </div>
+                <div class="right-side">
+                    <div class="brand">
+                        <div>Åhus Måleri</div>
+                    </div>                  
+                </div>
+            </div>  
+            <!--Mid Page content-->
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+               
+                    <a href="inomhus.html" target="_blank">
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/inredning.jpg);"> </div>
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                        <img src="images/inve.png" alt="">
+                                </div>
+                                <div class="subtitle">
+                                Inomhus Målning
+                                </div>
+                            </div>                    
+                        </div>
+                    </a>
+                    <div class="portfolio-item-wrapper">
+                        <a href="utomhus.html" target="_blank"> <div class="portfolio-img-background" style="background-image: url(images/hus.jpg);"></div></a>  
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/Huse.png" alt="">
+                            </div>
+                            <div class="subtitle">
+                                Utomhus Målning
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <a href="pris.html" target="_blank"> <div class="portfolio-img-background" style="background-image: url(images/trade.jpg);"></div></a>  
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/peng.png" alt="">
+                            </div>
+                            <div class="subtitle">
+                                Pris Information
+                            </div>
+                        </div>                    
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <a href="insperation.html" target="_blank"> <div class="portfolio-img-background" style="background-image: url(images/insp.jpg);"></div></a>  
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/insp.png" alt="">
+                            </div>
+                            <div class="subtitle">
+                               Insperation
+                            </div>
+                        </div>                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+
+            <div class="footer-content">
+                <div class="content-left">
+                    <pre>
+                        <a href="https://sv-se.facebook.com/"><img src="images/FB.png" alt=""></a>  ÅhusMåleri
+                        <a href="https://twitter.com/?lang=sv"><img src="images/twit.png" alt=""></a>  ÅhusMålaren
+                        <a href="https://www.google.com/intl/sv/gmail/about/"><img src="images/mail.png" alt=""></a>  Ahus.Maleri@gmail.com
+                    </pre>
+                </div>
+                <div class="content-right">
+                    <ul style="list-style-type:none;">
+                        <li>Kontakt</li>
+                        <li>Adress: Hittepågatan 16 Åhus </li> 
+                        <li>Telefon: 07060065</li>
+                        <li>Öppetider: Mån - Fre | 07:00 - 17:00</li>
+                    </ul>   
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <a href="//github.com/FilipStaaf/HTML5-och-CSS-kurs">//github.com/FilipStaaf/HTML5-och-CSS-kurs</a> | Designed by Filip Staaf
+            </div>
+
+        </div>
+        <script>
+            const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+            portfolioItems.forEach(portfolioItem => {
+                portfolioItem.addEventListener('mouseover', () => {
+                   portfolioItem.childNodes[1].classList.add('img-darken');
+                })
+                portfolioItem.addEventListener('mouseout', () => {
+                   portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+            })
+        </script>
+    </body> 
+</html>
